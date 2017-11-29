@@ -1,6 +1,6 @@
 {
   "name": "angularjs-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -37,17 +37,11 @@
     "webpack-dev-server": "^2.9.3"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "eslintConfig": {
-    "extends": [
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
-    ],
+    "extends": ["prettier"],
+    "plugins": ["prettier"],
     "rules": {
       "prettier/prettier": "error"
     },
