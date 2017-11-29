@@ -16,17 +16,26 @@ module.exports = {
         use: ["babel-loader", "eslint-loader"]
       },
       {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
         test: /\.html$/,
         loader: "raw-loader"
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+        loader: "file-loader"
       }
     ]
   },
   devServer: {
     contentBase: path.join(__dirname, "build"),
     compress: true,
-    stats: "errors-only",
+    stats: "minimal",
     open: true
   },
+  devtool: "eval-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       minify: {
