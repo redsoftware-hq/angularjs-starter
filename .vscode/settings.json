@@ -7,5 +7,8 @@
     "**/.DS_Store": true,
     "node_modules": true,
     ".vscode/chrome": true
-  }
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false
 }
