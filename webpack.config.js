@@ -3,7 +3,7 @@ var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/app/app.js",
+  entry: "./src/app.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build")
@@ -42,7 +42,7 @@ module.exports = {
         collapseWhitespace: true
       },
       hash: true,
-      template: "./src/public/index.html"
+      template: "./public/index.html"
     })
   ]
 };

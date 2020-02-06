@@ -1,23 +1,11 @@
 {
   "name": "angularjs-starter",
   "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "rimraf build && webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/ron4ex/angularjs-starter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/ron4ex/angularjs-starter/issues"
-  },
-  "homepage": "https://gitlab.com/ron4ex/angularjs-starter#README",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
@@ -37,11 +25,17 @@
     "webpack-dev-server": "^3.10.3"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "eslintConfig": {
-    "extends": ["prettier"],
-    "plugins": ["prettier"],
+    "extends": [
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": "error"
     },
